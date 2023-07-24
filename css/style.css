@@ -1,17 +1,17 @@
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box ;
-    
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
 /*Header*/
-header{
-    background-color: black;
-    width:100%;
-    height:15vh;
+header {
+    background-color:rgba(102, 106, 134, 0.842);
+    width: 100%;
+    height: 15vh;
     padding: 0px 0px 0px 0px;
     position: sticky;
     top: 0;
@@ -19,38 +19,50 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    color: rgb(13, 6, 48);
 }
 
-header img{
-    width:112.84px;
-    height:100%;
-    border-radius: 15px;
+header h1{
+    font-weight: bold;
+    border-style: double;
+    border-color: rgb(13, 6, 48);
+    border-radius: 100%;
 }
-
-header nav ul{
+header nav ul {
     list-style: none;
     display: flex;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(216, 216, 246);
     margin: 5px;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color:rgb(13, 6, 48);
+    color: rgb(216, 216, 246);
+}
+
+.nav-link {
+    color:rgb(13, 6, 48);
+}
+
 /*Main*/
-main{
-    background-color: rgb(74, 89, 90);
+main {
+    background-color: rgb(216, 216, 246);
     
 }
 
-.hero{
+.hero {
     width: 100%;
     height: 70vh;
     background-image: url(../img/Caminos.jpeg);
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: black;
     text-align: center;
     display: flex;
@@ -59,169 +71,418 @@ main{
     align-items: center;
 }
 
-.hero h1{
+.hero h1 {
     display: inline-block;
-    font-size: 80px;
-    border: 10px rgb(0, 0, 0) double;
+    font-size: 60px;
+    border: 10px rgb(13, 6, 48) double;
     padding: 10px;
     background-color: rgb(255, 255, 255);
 }
 
-.hero p{
+.hero p {
     margin-top: 5px;
-    font-size:40px;
+    font-size: 30px;
 }
 
-.areas{
-display: flex;
-flex-direction: column;
+.quotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+}
+.quotes img{
+    display: inline-block;
+    font-size: 60px;
+    border: 10px rgb(13, 6, 48) double;
+}
+.quotep{
+    text-align: center;
+    font-size: small;
+    height: 50px;
 }
 
-.areas h2{
-    background-color: black;
+.quotes p{
+width: 50%;
+font-style: italic;
+}
+/*SERVICIOS HTML*/
+.areas {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.areas h2 {
+    background-color: rgb(13, 6, 48);
     color: white;
     text-align: center;
     font-size: 40px;
     padding: 5px;
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 15px;
 }
 
-.areas p{
+.areas p {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
+    width: 450px;
 }
 
-.areas .productos{
-    width: 100%;
-    height:450px ;
+.areas .productos {
+    width: 90%;
+    height: 500px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
-.areas .producto1{
+.areas .producto1 {
     background-color: rgb(255, 255, 255, 0.466);
 }
 
-.areas div{
-    border:2px solid rgb(0, 0, 0);
+.areas div {
+    border: 2px solid rgb(0, 0, 0);
     width: 250px;
-    height: 400px;
+    height: 450px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 11px 11px 23px 1px rgba(0,0,0,0.75);
--webkit-box-shadow: 11px 11px 23px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 11px 23px 1px rgba(0,0,0,0.75);
+    box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
 }
 
-.areas div img{
-    width:100%;
-    height:250px;
+.areas div img {
+    width: 100%;
+    height: 250px;
     border-radius: 10px;
 }
 
-.areas div h3{
+.areas div h3 {
     margin: 5px;
     font-size: 20px;
 }
-.areas div p{
-    margin: 10px;
+
+.areas div p {
+    width: 200px;
     font-size: 15px;
+    margin-left: 20px;
 }
 
-.boton{
+.boton {
     text-decoration: none;
-    color:rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 6, 48);
     padding: 5px;
     border-radius: 15px;
 }
 
-.cursosiniciales{
+.cursosiniciales {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 
-.cursosiniciales h2{
-    background-color: black;
+.cursosiniciales .productos {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.cursosiniciales h2 {
+    background-color: rgb(13, 6, 48);
     color: white;
     font-size: 40px;
     padding: 5px;
     text-align: center;
+    width: 80%;
+    border-radius: 15px;
 }
 
-.cursosiniciales p{
+.cursosiniciales p {
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.cursosiniciales .productos{
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cursosiniciales div{
-    border:2px solid rgb(0, 0, 0);
+.cursosiniciales div {
+    border: 2px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255, 0.466);
     width: 300px;
-    height: 300px;
+    height: 330px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 11px 11px 23px 1px rgba(0,0,0,0.75);
--webkit-box-shadow: 11px 11px 23px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 11px 23px 1px rgba(0,0,0,0.75);
+    box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
 }
 
-.cursosiniciales div img{
-    width:100%;
-    height:200px;
+.cursosiniciales div img {
+    width: 100%;
+    height: 200px;
     border-radius: 10px;
 }
 
-.cursosiniciales div h3{
-    margin: 5px;
-}
-.cursosiniciales div p{
-    margin: 5px;
+.cursosiniciales div h3 {
+    margin: 5px 0px 20px 0px;
 }
 
-.position{
+.position {
     position: fixed;
     bottom: 25px;
     right: 25px;
 }
-.position img{
+
+.position img {
     width: 50px;
-
-
 }
+
 /*Footer*/
-footer{
-    background-color: black;
-    height: 50px;
+footer {
+    background-color: rgb(102, 106, 134);
+    height: 75px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 5px;
-}
-footer img{
-    border-radius: 15px;
-    height:50px ;
-    width:50px ;
+    color: rgb(13, 6, 48);
 }
 
-.redessociales{
+footer h1{
+    font-weight: bold;
+    border-style: double;
+    border-color: rgb(13, 6, 48);
+    border-radius: 100%;
+}
+footer img {
+    border-radius: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.redessociales {
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content:end;
-    align-items:center;
+    justify-content: end;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.redessociales a {
+    margin: 0px 5px 0px 5px;
+}
+
+
+/*CONTACTO HTML*/
+
+.herocontacto {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 246);
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 246);
+}
+
+.divform{
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-style:groove;
+    border-width: 5px;
+    border-color: black;
+    background-color:rgb(102, 106, 134, 0.842) ;
+    display: flex;
+    justify-content: center;
+}
+
+form div h3{
+    display: flex;
+    justify-content: center;
+}
+.genero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.textbox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form div textarea{
+    width: 80%;
+}
+
+div .form-check{
+    display: flex;
+    justify-content: center;
+}
+
+.col-12{
+    display: flex;
+    justify-content: center;
+}
+
+/* PRODUCTOS HTML*/
+    
+.grid-container{
+    background-color: rgb(216, 216, 246);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 80px 300px 300px 350px;
+    gap: 10px;
+    height: 1080px;
+    grid-template-areas:
+    "h1 h1 h1" 
+    "negocios espiritual parrafo"
+    "comunicacion bienestar parrafo"
+    "inf inf inf"
+    ;
+}
+.h1prod{
+    grid-area: h1;
+    font-size: 55px;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.catalogonegocios{
+    grid-area: negocios;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-style: solid;
+    border-color: black;
+}
+.catalogocomunicacion{
+    grid-area: comunicacion;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-style: solid;
+    border-color: black;
+}
+.catalogobienestar{
+    grid-area: bienestar;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-style: solid;
+    border-color: black;
+
+}
+.catalogoespiritual{
+    grid-area: espiritual;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-style: solid;
+    border-color: black;
+
+}
+.parrafolateral{
+    grid-area: parrafo;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogoinferior{
+    grid-area: inf;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-color: black;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.466);
+    box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.catalogoinferior div{
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+}
+
+.grid-container div{
+    background-color: rgb(255, 255, 255, 0.466);
+    box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.grid-container h2{
+    background-color: rgb(13, 6, 48);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+.grid-container p{
+    color: black;
+    font-size:xx-large;
+    font-style: italic;
+    margin-left: 10px;
+}
+.boton1{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 6, 48);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+/*SERVICIOS HTML*/
+.h1serv{
+    text-align: center;
+    font-size: 55px;
+    font-style:oblique;
 }
