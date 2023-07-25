@@ -101,7 +101,9 @@ main {
 .quotep{
     text-align: center;
     font-size: small;
-    height: 50px;
+    height: 100px;
+    width: 100%;
+
 }
 
 .quotes p{
@@ -352,14 +354,19 @@ div .form-check{
 
 /* PRODUCTOS HTML*/
     
+.mainproductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .grid-container{
     background-color: rgb(216, 216, 246);
-    width: 100%;
+    width: 95%;
+    height: 1080px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 80px 300px 300px 350px;
     gap: 10px;
-    height: 1080px;
     grid-template-areas:
     "h1 h1 h1" 
     "negocios espiritual parrafo"
@@ -424,6 +431,7 @@ div .form-check{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .catalogoinferior{
@@ -485,4 +493,90 @@ div .form-check{
     text-align: center;
     font-size: 55px;
     font-style:oblique;
+}
+
+@media screen and (max-width:375px){
+    .quotes p{
+        font-size: small;
+    }
+    .quotep{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:975px){
+    .grid-container{
+        height: 1300px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:80px 300px 300px 200px 350px;
+        grid-template-areas:
+        "h1 h1" 
+        "negocios espiritual"
+        "comunicacion bienestar"
+        "parrafo parrafo"
+        "inf inf"
+    }
+    .parrafolateral{
+        font-size: small;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .catalogoinferior div{
+        height: 300px;
+        width: 300px;
+    }
+    .catalogoinferior img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .grid-container{
+        height: 2430px; ;        
+        grid-template-columns: 1fr;
+        grid-template-rows:80px 310px 310px 310px 310px 310px 650px ;
+        gap: 20px;
+        grid-template-areas:
+        "h1" 
+        "parrafo"
+        "negocios"
+        "espiritual"
+        "comunicacion"
+        "bienestar"
+        "inf"
+    }
+
+    .catalogoinferior{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+        position: static;
+    }
+    .grid-container{
+        height: 2630px;       
+        grid-template-columns: 1fr;
+        grid-template-rows:80px 510px 310px 310px 310px 310px 650px;
+        gap: 20px;
+        grid-template-areas:
+        "h1" 
+        "parrafo"
+        "negocios"
+        "espiritual"
+        "comunicacion"
+        "bienestar"
+        "inf"
+    }
+    .parrafolateral{
+        font-size: small;
+        padding-top: 10px;
+    }
+    .h1prod{
+        font-size: 45px;
+        font-weight: bolder;
+    }
 }
