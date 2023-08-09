@@ -98,6 +98,11 @@ main {
     font-size: 60px;
     border: 10px rgb(13, 6, 48) double;
 }
+.quotes p{
+    width: 50%;
+    font-style: italic;
+    }
+    
 .quotep{
     text-align: center;
     font-size: small;
@@ -106,10 +111,7 @@ main {
 
 }
 
-.quotes p{
-width: 50%;
-font-style: italic;
-}
+
 /*SERVICIOS HTML*/
 .areas {
     text-align: center;
@@ -500,7 +502,7 @@ div .form-check{
         font-size: small;
     }
     .quotep{
-        height: 120px;
+        height: 140px;
     }
 }
 
@@ -547,7 +549,7 @@ div .form-check{
         "bienestar"
         "inf"
     }
-
+xvvx
     .catalogoinferior{
         flex-direction: column;
     }

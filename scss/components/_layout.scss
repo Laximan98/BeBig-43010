@@ -1,0 +1,618 @@
+/* Main */
+main {
+    background-color: rgb(216, 216, 246);
+    .hero {
+        width: 100%;
+        height: 70vh;
+        background-image: url(../img/Caminos.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .animate__fadeIn {
+            display: inline-block;
+            font-size: 60px;
+            border: 10px rgb(13, 6, 48) double;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        p {
+            margin-top: 5px;
+            font-size: 30px;
+        }
+    }
+    .quotes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+        img {
+            display: inline-block;
+            font-size: 60px;
+            border: 10px rgb(13, 6, 48) double;
+        }
+        p {
+            width: 50%;
+            font-style: italic;
+        }
+    }
+    .quotep {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: small;
+        height: 150px;
+        width: 100%;
+    }
+}
+
+/* BIBLIOTECA HTML*/
+.mainproductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .grid-container{
+        background-color: rgb(216, 216, 246);
+        width: 95%;
+        height: 1080px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 300px 300px 350px;
+        gap: 10px;
+        grid-template-areas:
+        "h1 h1 h1"
+        "negocios espiritual parrafo"
+        "comunicacion bienestar parrafo"
+        "inf inf inf"
+        ;
+        div {
+            background-color: rgba(255, 255, 255, 0.466);
+            box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+            border: 2px solid rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            @extend %border-radius;
+            transition: 1s;
+        &:hover{
+            transform: scale(1.025);
+        }
+            h2 {
+                background-color: rgb(13, 6, 48);
+                color: white;
+                width: 100%;
+                text-align: center;
+                font-style: italic;
+            }
+            p {
+                color: black;
+                font-size: xx-large;
+                font-style: italic;
+                margin-left: 10px;
+            }
+        }
+        .h1prod {
+            grid-area: h1;
+            font-size: 55px;
+            font-style: oblique;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+        .catalogonegocios {
+            grid-area: negocios;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-style: solid;
+            border-color: black;
+            h2 {
+                background-color: rgb(13, 6, 48);
+                color: white;
+                width: 100%;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+        .catalogocomunicacion {
+            grid-area: comunicacion;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-style: solid;
+            border-color: black;
+            h2 {
+                background-color: rgb(13, 6, 48);
+                color: white;
+                width: 100%;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+        .catalogobienestar {
+            grid-area: bienestar;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-style: solid;
+            border-color: black;
+            h2 {
+                background-color: rgb(13, 6, 48);
+                color: white;
+                width: 100%;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+        .catalogoespiritual {
+            grid-area: espiritual;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-style: solid;
+            border-color: black;
+            h2 {
+                background-color: rgb(13, 6, 48);
+                color: white;
+                width: 100%;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+        .parrafolateral {
+            grid-area: parrafo;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        .catalogoinferior {
+            grid-area: inf;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            border-color: black;
+            @extend %border-radius;
+            background-color: rgba(255, 255, 255, 0.466);
+            box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+            border: 2px solid rgb(0, 0, 0);
+            div {
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                width: 400px;
+            }
+        }
+    }
+}
+
+/*CONTACTO HTML*/
+.herocontacto {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 246);
+}
+.formulario {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 246);
+}
+.divform {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: black;
+    background-color: rgba(102, 106, 134, 0.842);
+    display: flex;
+    justify-content: center;
+}
+form {
+    div {
+        h3 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.genero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.textbox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    div {
+        textarea {
+            width: 80%;
+        }
+    }
+}
+div {
+    .form-check {
+        display: flex;
+        justify-content: center;
+    }
+}
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+/*LIBRERIA HTML*/
+.mainlibreria{
+    width: 100%;
+    height: 1900px;
+    padding: 10px;
+    h1{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+    }
+    .finanzaspersonales{
+        h2{
+            background-color: rgb(13, 6, 48);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        .conjunto{
+            .libros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .libro{
+                    height: 250px;
+                    width: 300px;
+                    @extend %border-radius;
+                    border-style: solid;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-style:solid;
+                    }
+                    p{
+                        width: 200px;
+                        font-size: 25px;
+                        margin-left: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+            }
+        }
+    }
+}
+    .negocios{
+        h2{
+            background-color: rgb(13, 6, 48);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        .conjunto{
+            .libros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .libro{
+                    height: 250px;
+                    width: 300px;
+                    @extend %border-radius;
+                    border-style: solid;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-style:solid;
+                    }
+                    p{
+                        width: 200px;
+                        font-size: 25px;
+                        margin-left: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .comunicacion{
+        h2{
+            background-color: rgb(13, 6, 48);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        .conjunto{
+            .libros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .libro{
+                    height: 250px;
+                    width: 300px;
+                    @extend %border-radius;
+                    border-style: solid;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-style:solid;
+                    }
+                    p{
+                        width: 200px;
+                        font-size: 25px;
+                        margin-left: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .salud{
+        h2{
+            background-color: rgb(13, 6, 48);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        .conjunto{
+            .libros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .libro{
+                    height: 250px;
+                    width: 300px;
+                    @extend %border-radius;
+                    border-style: solid;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-style:solid;
+                    }
+                    p{
+                        width: 200px;
+                        font-size: 25px;
+                        margin-left: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .meditacion{
+        h2{
+            background-color: rgb(13, 6, 48);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        .conjunto{
+            .libros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .libro{
+                    height: 250px;
+                    width: 300px;
+                    @extend %border-radius;
+                    border-style: solid;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-style:solid;
+                    }
+                    p{
+                        width: 200px;
+                        font-size: 25px;
+                        margin-left: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .espiritualidad{
+        h2{
+            background-color: rgb(13, 6, 48);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+        }
+        .conjunto{
+            .libros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .libro{
+                    height: 250px;
+                    width: 300px;
+                    @extend %border-radius;
+                    border-style: solid;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-style:solid;
+                    }
+                    p{
+                        width: 200px;
+                        font-size: 25px;
+                        margin-left: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SERVICIOS HTML */
+main {
+    .h1serv {
+        text-align: center;
+        font-size: 55px;
+        font-style: oblique;
+    }
+    .areas {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h2 {
+            background-color: rgb(13, 6, 48);
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            padding: 5px;
+            width: 80%;
+            @extend %border-radius;
+            margin-top: 15px;
+        }
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .productos {
+            width: 90%;
+            height: 500px;
+            @include flex (flex,space-around, center);
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            .producto1 {
+                background-color: rgba(255, 255, 255, 0.466);
+                border: 2px solid rgb(0, 0, 0);
+                width: 250px;
+                height: 450px;
+                @extend %border-radius;
+                text-align: center;
+                box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+                transition: 1s;
+                &:hover{
+                transform: scale(1.025);
+                }
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 10px;
+                }
+                h3 {
+                    margin: 5px;
+                    font-size: 20px;
+                }
+                p {
+                    width: 200px;
+                    font-size: 15px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .cursosiniciales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        h2 {
+            background-color: rgb(13, 6, 48);
+            color: white;
+            font-size: 40px;
+            padding: 5px;
+            text-align: center;
+            width: 80%;
+            @extend %border-radius;
+        }
+        p {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .productos {
+            width: 90%;
+            height: 400px;
+            @include flex (flex,space-around, center);
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            .curso1 {
+                border: 2px solid rgb(0, 0, 0);
+                background-color: rgba(255, 255, 255, 0.466);
+                width: 300px;
+                height: 330px;
+                @extend %border-radius;
+                text-align: center;
+                box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 11px 11px 23px 1px rgba(0, 0, 0, 0.75);
+                transition: 1s;
+                &:hover{
+                transform: scale(1.025);
+                }
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+                h3 {
+                    margin: 5px 0px 20px 0px;
+                }
+            }
+        }
+    }
+}

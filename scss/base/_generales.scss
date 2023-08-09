@@ -1,0 +1,31 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.boton {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 6, 48);
+    padding: 5px;
+    border-radius: 15px;
+}
+.position {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.position img {
+    width: 50px;
+}
+.boton1 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 6, 48);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}

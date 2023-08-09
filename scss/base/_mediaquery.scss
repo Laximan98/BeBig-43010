@@ -1,0 +1,262 @@
+/*index html*/
+@media screen and (max-width:375px){
+    .quotes p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:975px){
+    .mainproductos{
+        .grid-container{
+            height: 1300px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:80px 300px 300px 200px 350px;
+            grid-template-areas:
+            "h1 h1" 
+            "negocios espiritual"
+            "comunicacion bienestar"
+            "parrafo parrafo"
+            "inf inf"
+            ;
+            .parrafolateral{
+                font-size: small;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .mainproductos{
+        .grid-container{
+            .catalogoinferior div{
+                height: 300px;
+                width: 300px;
+            }
+            .catalogoinferior img{
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .mainproductos{
+        .grid-container{
+            height: 2430px; ;        
+            grid-template-columns: 1fr;
+            grid-template-rows:80px 310px 310px 310px 310px 310px 650px ;
+            gap: 20px;
+            grid-template-areas:
+            "h1" 
+            "parrafo"
+            "negocios"
+            "espiritual"
+            "comunicacion"
+            "bienestar"
+            "inf"
+            ;
+            .catalogoinferior{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .mainproductos{
+        .grid-container{
+            height: 2630px;       
+            grid-template-columns: 1fr;
+            grid-template-rows:80px 510px 310px 310px 310px 310px 650px;
+            gap: 20px;
+            grid-template-areas:
+            "h1" 
+            "parrafo"
+            "negocios"
+            "espiritual"
+            "comunicacion"
+            "bienestar"
+            "inf"
+        }
+        .h1prod{
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        .parrafolateral{
+            font-size: small;
+            padding-top: 10px;
+        }
+    }
+}
+@media screen and (max-width:430px){
+    .mainproductos{
+        .grid-container{
+            .h1prod{
+            font-size: 42px;
+            font-weight: bolder;
+            }
+        }
+    }
+}
+
+/*libreria html*/
+@media screen and (max-width:806px){
+    .mainlibreria{
+        .finanzaspersonales{
+            .conjunto{
+                .libros{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .libro{
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+        .negocios{
+            .conjunto{
+                .libros{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .libro{
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+        .comunicacion{
+            .conjunto{
+                .libros{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .libro{
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+        .salud{
+            .conjunto{
+                .libros{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .libro{
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+        .meditacion{
+            .conjunto{
+                .libros{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .libro{
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+        .espiritualidad{
+            .conjunto{
+                .libros{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .libro{
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:806px){
+    .mainlibreria{
+        height: auto;
+    }
+}
+
+/*Servicioshtml*/
+@media screen and (max-width:1111px){
+    .areas{
+        height: 1100px;
+        .productos{
+            flex-wrap: wrap;
+            .producto1{
+                margin-top:20px ;
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px){
+    .cursosiniciales{
+        height: 930px;
+        .curso1{
+            margin:15px;
+        }
+    }
+}
+@media screen and (max-width:817px){
+    .cursosiniciales{
+        height: 980px;
+        .curso1{
+            margin:15px;
+        }
+    }
+}
+@media screen and (max-width:733px){
+    .cursosiniciales{
+        height: 1330px;
+        .curso1{
+            margin:15px;
+        }
+    }
+}
+@media screen and (max-width:651px){
+    .cursosiniciales{
+        height: 1370px;
+        .curso1{
+            margin:15px;
+        }
+    }
+}
+@media screen and (max-width:507px){
+    .cursosiniciales{
+        height: 1390px;
+        .curso1{
+            margin:15px;
+        }
+    }
+}
+@media screen and (max-width:452px){
+    .cursosiniciales{
+        height: 1490px;
+        .curso1{
+            margin:15px;
+        }
+    }
+}
+
+@media screen and (max-width:555px){
+    .areas{
+        height: 2050px;
+        .productos{
+            flex-wrap: wrap;
+            .producto1{
+                margin-top:20px ;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    .areas{
+        height: 2050px;
+        p{
+            font-size: 10px;
+            height: 100px;
+            text-align: justify;
+        }
+    }
+}
