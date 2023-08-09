@@ -197,7 +197,7 @@ main {
         width: 100%;
         text-align: center;
         font-style: italic; }
-    .mainproductos .grid-container .catalogoespiritual {
+    .mainproductos .grid-container .catalogofinanzaspersonales {
       grid-area: espiritual;
       width: 100%;
       display: flex;
@@ -206,7 +206,7 @@ main {
       border-style: solid;
       border-style: solid;
       border-color: black; }
-      .mainproductos .grid-container .catalogoespiritual h2 {
+      .mainproductos .grid-container .catalogofinanzaspersonales h2 {
         background-color: #0d0630;
         color: white;
         width: 100%;
@@ -297,7 +297,7 @@ div .form-check {
 /*LIBRERIA HTML*/
 .mainlibreria {
   width: 100%;
-  height: 1900px;
+  height: auto;
   padding: 10px; }
   .mainlibreria h1 {
     padding: 10px;
@@ -316,16 +316,16 @@ div .form-check {
     justify-content: space-between;
     margin-bottom: 10px; }
     .mainlibreria .finanzaspersonales .conjunto .libros .libro {
-      height: 250px;
+      height: 350px;
       width: 300px;
       border-style: solid; }
       .mainlibreria .finanzaspersonales .conjunto .libros .libro img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-style: solid; }
       .mainlibreria .finanzaspersonales .conjunto .libros .libro p {
         width: 200px;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 20px;
         text-align: center;
         font-weight: bold; }
@@ -341,16 +341,16 @@ div .form-check {
     justify-content: space-between;
     margin-bottom: 10px; }
     .mainlibreria .negocios .conjunto .libros .libro {
-      height: 250px;
+      height: 350px;
       width: 300px;
       border-style: solid; }
       .mainlibreria .negocios .conjunto .libros .libro img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-style: solid; }
       .mainlibreria .negocios .conjunto .libros .libro p {
         width: 200px;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 20px;
         text-align: center;
         font-weight: bold; }
@@ -366,16 +366,16 @@ div .form-check {
     justify-content: space-between;
     margin-bottom: 10px; }
     .mainlibreria .comunicacion .conjunto .libros .libro {
-      height: 250px;
+      height: 350px;
       width: 300px;
       border-style: solid; }
       .mainlibreria .comunicacion .conjunto .libros .libro img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-style: solid; }
       .mainlibreria .comunicacion .conjunto .libros .libro p {
         width: 200px;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 20px;
         text-align: center;
         font-weight: bold; }
@@ -391,16 +391,16 @@ div .form-check {
     justify-content: space-between;
     margin-bottom: 10px; }
     .mainlibreria .salud .conjunto .libros .libro {
-      height: 250px;
+      height: 350px;
       width: 300px;
       border-style: solid; }
       .mainlibreria .salud .conjunto .libros .libro img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-style: solid; }
       .mainlibreria .salud .conjunto .libros .libro p {
         width: 200px;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 20px;
         text-align: center;
         font-weight: bold; }
@@ -416,16 +416,16 @@ div .form-check {
     justify-content: space-between;
     margin-bottom: 10px; }
     .mainlibreria .meditacion .conjunto .libros .libro {
-      height: 250px;
+      height: 350px;
       width: 300px;
       border-style: solid; }
       .mainlibreria .meditacion .conjunto .libros .libro img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-style: solid; }
       .mainlibreria .meditacion .conjunto .libros .libro p {
         width: 200px;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 20px;
         text-align: center;
         font-weight: bold; }
@@ -441,16 +441,16 @@ div .form-check {
     justify-content: space-between;
     margin-bottom: 10px; }
     .mainlibreria .espiritualidad .conjunto .libros .libro {
-      height: 250px;
+      height: 350px;
       width: 300px;
       border-style: solid; }
       .mainlibreria .espiritualidad .conjunto .libros .libro img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-style: solid; }
       .mainlibreria .espiritualidad .conjunto .libros .libro p {
         width: 200px;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 20px;
         text-align: center;
         font-weight: bold; }
